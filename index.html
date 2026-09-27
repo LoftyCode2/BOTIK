@@ -1,24 +1,69 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
 <head>
-    <meta charset="UTF-8">
-    <title>Просмотр видео</title>
-    
-    <!-- Теги для красивого предпросмотра в Telegram -->
-    <meta property="og:type" content="video.other" />
-    <meta property="og:title" content="Название вашего видео" />
-    <meta property="og:video" content="https://github.io" />
-    <meta property="og:video:type" content="video/mp4" />
-    <meta property="og:video:width" content="1280" />
-    <meta property="og:video:height" content="720" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Демонстрация BOTIK</title>
+    <meta name="description" content="Короткая демонстрация работы Telegram-бота.">
+    <link rel="icon" href="data:,">
+    <link rel="canonical" href="https://loftycode2.github.io/BOTIK/">
+
+    <meta property="og:type" content="video.other">
+    <meta property="og:url" content="https://loftycode2.github.io/BOTIK/">
+    <meta property="og:title" content="Демонстрация BOTIK">
+    <meta property="og:description" content="Короткая демонстрация работы Telegram-бота.">
+    <meta property="og:site_name" content="BOTIK">
+
+    <meta property="og:image" content="https://loftycode2.github.io/BOTIK/sfg_chr2_prob3.poster.jpg?v=2">
+    <meta property="og:image:secure_url" content="https://loftycode2.github.io/BOTIK/sfg_chr2_prob3.poster.jpg?v=2">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="668">
+    <meta property="og:image:alt" content="Кадр из демонстрационного видео BOTIK">
+
+    <meta property="og:video" content="https://loftycode2.github.io/BOTIK/sfg_chr2_prob3.mp4?v=2">
+    <meta property="og:video:url" content="https://loftycode2.github.io/BOTIK/sfg_chr2_prob3.mp4?v=2">
+    <meta property="og:video:secure_url" content="https://loftycode2.github.io/BOTIK/sfg_chr2_prob3.mp4?v=2">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="712">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Демонстрация BOTIK">
+    <meta name="twitter:description" content="Короткая демонстрация работы Telegram-бота.">
+    <meta name="twitter:image" content="https://loftycode2.github.io/BOTIK/sfg_chr2_prob3.poster.jpg?v=2">
+
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #070b12;
+        }
+
+        body {
+            display: grid;
+            min-height: 100vh;
+            margin: 0;
+            place-items: center;
+            background: radial-gradient(circle at 50% 35%, #102747, #070b12 62%);
+        }
+
+        video {
+            display: block;
+            width: min(94vw, 1280px);
+            max-height: 92vh;
+            border: 1px solid rgb(124 190 255 / 22%);
+            border-radius: 14px;
+            background: #000;
+            box-shadow: 0 24px 80px rgb(0 0 0 / 55%);
+        }
+    </style>
 </head>
-<body style="background-color: #111; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-
-    <!-- Этот блок уберет белый экран и покажет видео на сайте -->
-    <video controls autoplay loop style="max-width: 90%; max-height: 90vh; border-radius: 8px;">
-        <source src="https://github.io" type="video/mp4">
-        Ваш браузер не поддерживает встроенные видео.
+<body>
+    <video controls autoplay loop playsinline preload="metadata"
+           poster="sfg_chr2_prob3.poster.jpg">
+        <source src="sfg_chr2_prob3.mp4" type="video/mp4">
+        Ваш браузер не поддерживает встроенное видео.
     </video>
-
 </body>
 </html>
